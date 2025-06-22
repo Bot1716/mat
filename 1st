@@ -1,0 +1,14 @@
+x= 0:pi/10:2*pi;
+y= cos(x);
+g= sin(x);
+subplot (1,2,1);
+plot(x,y);
+xlabel ('x');
+ylabel ('cos(x)');
+title ('Cosine wave');
+subplot (1,2,2);
+plot (x,y,'Color','g','Linewidth',2);
+xlabel ('x');
+ylabel ('sin(x)');
+title ('sine wave');
+grid on;
