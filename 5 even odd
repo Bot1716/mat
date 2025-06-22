@@ -1,0 +1,25 @@
+t-5:0.01:5;
+
+ x1= exp(2*t);
+
+x2= exp(-2*t);
+
+ x1_even 0.5 (exp(2*t) + exp(-2*t));
+
+x1_odd 0.5 (exp(2*t) exp(-2*t));
+
+x2_even 0.5* (exp(2*t) + exp(-2*t));
+
+ x2_odd 0.5 (exp(2*t) exp(-2*t));
+
+ figure;
+
+ subplot(2,2,1), plot(t, x1, 'r'), title('x1(t) = e^{2t}');
+
+ subplot(2,2,3), plot(t, x1_even, 'b'), title('Even Part of x1');
+
+subplot(2,2,4), plot(t, x1_odd, 'g'), title('Odd Part of x1');
+
+
+
+ subplot(2,2,2), plot(t, x2, 'm'), title('x2(t)= e^{-2t}');
