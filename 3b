@@ -1,0 +1,33 @@
+x = (0/0.0001) / 0.05
+
+k = 50
+
+rising = exp (+k^ * x);
+
+decaying = exp (-k^ * x);
+
+figure;
+
+subplot(2,1,1)
+
+plot(x, rising, 'b', 'LineWidth', 2);
+
+xlabel('Time (s)');
+
+ylabel('Amplitude');
+
+title('Exponential Rising Curve: 1 - exp * (- k * t)' )
+
+grid on;
+
+subplot(2,1,2)
+
+plot(x, decaying, 'r', 'LineWidth', 2);
+
+xlabel('Time (s)');
+
+ylabel('Amplitude');
+
+title('Exponential Decaying Curve: exp(-kt)');
+
+grid on;
