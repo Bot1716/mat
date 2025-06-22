@@ -1,0 +1,37 @@
+x= 0:0.001:0.01;
+a= sin(200*pi*x+pi/6);
+b= sin(200*pi*x);
+c= sin(200*pi*x-pi/6);
+d= cos(200*pi*x+pi/6);
+e= cos(200*pi*x);
+f= cos(200*pi*x-pi/6);
+subplot(3,2,1)
+plot(x,a);
+xlabel('time');
+ylabel('amplitude');
+title('sin(200*pi*x+pi/6)');
+subplot(3,2,3)
+plot(x,b);
+xlabel('time');
+ylabel('amplitude');
+title('sin(200*pi*x)');
+subplot(3,2,5)
+plot(x,c);
+xlabel('time');
+ylabel('amplitude');
+title('sin(200*pi*x-pi/6)');
+subplot(3,2,2)
+plot(x,d);
+xlabel('time');
+ylabel('amplitude');
+title('cos(200*pi*x+pi/6)');
+subplot(3,2,4)
+plot(x,e);
+xlabel('time');
+ylabel('amplitude');
+title('cos(200*pi*x)');
+subplot(3,2,6)
+plot(x,f);
+xlabel('time');
+ylabel('amplitude');
+title('cos(200*pi*x-pi/6)');
