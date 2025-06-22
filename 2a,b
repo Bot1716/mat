@@ -79,3 +79,41 @@ Ylabel('Ramp');
 Title('Continuous-Time Ramp Signal');
 
 Grid on;
+
+
+
+
+
+X = (0/0.0001) / 0.05
+
+k = 50
+
+Rising = exp (+k^ * x);
+
+Decaying = exp (-k^ * x);
+
+Figure;
+
+Subplot(2,1,1)
+
+Plot(x, rising, 'b', 'LineWidth', 2);
+
+Xlabel('Time (s)');
+
+Ylabel('Amplitude');
+
+Title('Exponential Rising Curve: 1 - exp * (- k * t)' ) ;
+
+Grid on;
+
+Subplot(2,1,2)
+
+Plot(x, decaying, 'r', 'LineWidth', 2);
+
+Xlabel('Time (s)');
+
+Ylabel('Amplitude');
+
+Title('Exponential Decaying Curve: exp(-kt)');
+
+Grid on;
