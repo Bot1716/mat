@@ -1,0 +1,81 @@
+X-5:1:5;
+
+Y=(x>= 0);
+
+Subplot(1,2,1)
+
+Plot(x, y, 'LineWidth', 1, 'Color', 'r');
+
+Xlabel('x');
+
+Ylabel('Amplitude")
+
+Title('Unit Step continous');
+
+Subplot(1,2,2)
+
+Stem(x, y, 'LineWidth', 1, 'Color', 'r');
+
+Xlabel('x');
+
+Ylabel('Amplitude');
+
+Title('unit step discrete')
+
+Grid on;
+
+X-5:0.005:5;
+
+Y = (x == 0);
+
+Subplot(1,2,1)
+
+Plot(x, y, 'LineWidth', 1, 'Color', 'r');
+
+Xlabel('x');
+
+Ylabel('Amplitude')
+
+Title('Unit Step continous');
+
+Subplot(1,2,2)
+
+Stem(x, y, 'LineWidth', 1, 'Color', 'r');
+
+Xlabel('x');
+
+Ylabel('Amplitude');
+
+Title('unit step discrete')
+
+Grid on;
+
+
+
+x = (- 5/1) / 5
+
+Y= (x >= 0) ^ * X;
+
+Stem(x, y, 'LineWidth', 2);
+
+Xlabel('x');
+
+Ylabel('Ramp");
+
+Title('Continuous-Time Ramp Signal');
+
+Grid on;
+
+x = (- 5/1) / 5
+
+Y= (X >= 0) ^ * X;
+
+Plot(x, y, 'LineWidth', 2);
+
+Xlabel('x');
+
+Ylabel('Ramp');
+
+Title('Continuous-Time Ramp Signal');
+
+Grid on;
