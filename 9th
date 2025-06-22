@@ -1,0 +1,23 @@
+syms t s
+
+x=t;
+
+F=laplace(x);
+
+simplify(F);
+
+pretty (ans)
+
+
+
+
+
+. syms t s
+
+x=-1.25+3.5*t*exp(-2*t)+1.25*exp(-2*t);
+
+F=laplace(x);
+
+simplify(F);
+
+pretty (ans)
