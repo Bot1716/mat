@@ -1,0 +1,61 @@
+t=-10:01:10
+
+T = 8
+
+fm = 1 / T
+
+x =cos(2^ * pi^ * fm^ * t) ;
+
+l=1.6^ * fm ;
+
+fs2=2^ * fm
+
+fs 3=8^ * fm ,
+
+n * 1 = - 4/14
+
+xn1=cos(2*pi*n1*fm/fsl);
+
+subplot(2,2,1), plot(t,x);
+
+title('continus-time signal')
+
+subplot(2,2,2), stem (n1,xn1);
+
+hold on
+
+subplot(2,2,2), plot(n1,xn1);
+
+xlabel('n'), ylabel('x(n)')
+
+title('discreate-time signal')
+
+n2=-5:1:5;
+
+xn 2=cos(2^ * pi^ * n2^ * fm / f s2)
+
+subplot(2,2,3), stem(n2,xn2);
+
+hold on
+
+subplot(2,2,3)
+
+,plot(n2, xn2);
+
+xlabel('n'), ylabel (^ prime * (n)' )
+
+title('Discrete-time signal with fs = f * m deg )
+
+n3=-10:1:10;
+
+xn 3=cos(2^ * pi^ * n3^ * fm / f s3)
+
+subplot(2,2,4), plot(n3, xn3);
+
+hold on
+
+subplot(2,2,4), plot(n3, xn3);
+
+xlabel('n'), ylabel (^ prime * (n)' )
+
+title('Discrete-time  signal with fs>fm')
