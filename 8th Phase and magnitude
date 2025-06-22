@@ -1,0 +1,31 @@
+num_samples = 200; 
+x_t = zeros(num_samples);
+ x_t(1:10) = 1;
+
+subplot(3,2,1); 
+plot(x_t); 
+xlabel('Sample Index');
+ylabel('x(t)');
+ title('Plot of x(t)');
+
+x_f = fft(x_t);
+
+subplot(3,2,2);
+plot((x_f)); 
+title('FFT Magnitude of x(t)'); xlabel('Frequency Index'); ylabel('Magnitude');
+
+subplot(3,2,3); 
+plot(real(fftshift(x_f))); 
+title('Real Part of Shifted FFT'); xlabel('Frequency Index');
+ ylabel('Real Value');
+
+subplot(3,2,4); 
+plot(abs(x_f)); 
+title('Magnitude Spectrum'); xlabel('Frequency Index'); ylabel('Magnitude');
+
+subplot(3,2,5); 
+plot(angle(x_f)); 
+title('Phase Spectrum');
+ xlabel('Frequency Index');
+ ylabel('Phase (radians)'); 
+grid on;
